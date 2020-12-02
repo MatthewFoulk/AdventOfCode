@@ -4,11 +4,15 @@ import re
 
 FILE_NAME = 'input.txt'
 
+# https://regex101.com/
+# Helpful tool for visualizing regexp
+
 
 def firstPart():
     validCount = 0 # Number of valid passwords
 
-    regExp = re.compile(r'(?P<min>\d+)-(?P<max>\d+)\s(?P<letter>\w):\s(?P<password>\w+)') # Regexp for parsing lines
+    # Regexp for parsing lines
+    regExp = re.compile(r'(?P<min>\d+)-(?P<max>\d+)\s(?P<letter>\w):\s(?P<password>\w+)')
 
     with open(FILE_NAME, 'r') as f:
         for line in f:
@@ -30,7 +34,8 @@ def firstPart():
 def secondPart():
     validCount = 0 # Number of valid passwords
 
-    regExp = re.compile(r'(?P<firstPos>\d+)-(?P<secondPos>\d+)\s(?P<letter>\w):\s(?P<password>\w+)') # Regexp for parsing lines
+    # Regexp for parsing lines
+    regExp = re.compile(r'(?P<firstPos>\d+)-(?P<secondPos>\d+)\s(?P<letter>\w):\s(?P<password>\w+)')
 
     with open(FILE_NAME, 'r') as f:
         for line in f:
