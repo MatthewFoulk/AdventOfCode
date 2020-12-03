@@ -1,8 +1,6 @@
-
-import pandas as pd
 import re
 
-FILE_NAME = 'input.txt'
+FILE_NAME = '2020/Puzzle2/input.txt'
 
 # https://regex101.com/
 # Helpful tool for visualizing regexp

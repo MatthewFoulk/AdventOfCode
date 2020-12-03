@@ -1,5 +1,5 @@
 
-INPUT_FILE_NAME = 'input.txt'
+INPUT_FILE_NAME = '2020\Puzzle1\input.txt'
 
 def readInputIntoList():
     """
@@ -7,9 +7,9 @@ def readInputIntoList():
     a number from a new line.
     Returns the list of integers
     """
-    with open(INPUT_FILE_NAME, 'r') as input:
+    with open(INPUT_FILE_NAME, 'r') as f:
         # Add each line (a number) to the list and remove the newline character
-        inputList = [int(line.strip()) for line in input]
+        inputList = [int(line.strip()) for line in f]
     return inputList
 
 def firstPart():
